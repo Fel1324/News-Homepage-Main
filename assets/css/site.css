@@ -81,7 +81,8 @@
 }
 
 .web-future__img{
-    width: min(100%, 50rem);
+    width: 100%;
+    max-height: 40rem;
 }
 
 .web-future__title{
