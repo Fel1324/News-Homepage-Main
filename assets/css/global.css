@@ -9,6 +9,10 @@
     /* COLORS */
     --background-color: hsl(0, 0%, 100%);
     --background-button-color: hsl(5, 85%, 63%);
+    
+    --overlay-color: hsl(0, 0%, 0%);
+
+    --menu-text-color: hsl(0, 0%, 0%);
 
     --text-button-color: hsl(36, 100%, 99%);
     
@@ -57,5 +61,13 @@ button{
 
 h2{
     font-size: 3.2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 

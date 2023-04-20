@@ -17,11 +17,33 @@
             <div class="header__content container">
                 <img class="header__logo" src="assets/images/logo.svg" alt="logo News">
 
-                <button class="button-open button">
+                <button class="button-open">
                     <img src="assets/images/icon-menu.svg" alt="Abrir menu lateral">
                 </button>
             </div>
         </header>
+
+        <div id="overlay"></div>
+
+        <aside class="menu">
+            <div class="menu__content container">
+                <div class="menu__header">
+                    <button class="button-close">
+                        <img src="assets/images/icon-menu-close.svg" alt="Fechar menu lateral">
+                    </button>
+                </div>
+
+                <div class="menu__body">
+                    <ul class="menu__lista">
+                        <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#new" class="menu__link">New</a></li>
+                        <li class="menu__item"><a href="#popular" class="menu__link">Popular</a></li>
+                        <li class="menu__item"><a href="#trending" class="menu__link">Trending</a></li>
+                        <li class="menu__item"><a href="#categories" class="menu__link">Categories</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
 
         <main class="main">
             <div class="main__content container">
@@ -38,7 +60,7 @@
                     </div>
                 </section>
 
-                <article class="main__news">
+                <article id="new" class="main__news">
                     <h2 class="news__main-title">New</h2>
                     <div class="news__content">
                         <h3 class="news__title">Hydrogen VS Electric Cars</h3>
@@ -61,7 +83,7 @@
                 </article>
 
                 <section class="main__topics">
-                    <article class="topics__article">
+                    <article id="popular" class="topics__article">
                         <img class="topics__img" src="assets/images/image-retro-pcs.jpg" alt="">
 
                         <div class="topics__content">
@@ -71,7 +93,7 @@
                         </div>
                     </article>
 
-                    <article class="topics__article">
+                    <article id="trending" class="topics__article">
                         <img class="topics__img" src="assets/images/image-top-laptops.jpg" alt="">
 
                         <div class="topics__content">
@@ -81,7 +103,7 @@
                         </div>
                     </article>
 
-                    <article class="topics__article">
+                    <article id="categories" class="topics__article">
                         <img class="topics__img" src="assets/images/image-gaming-growth.jpg" alt="">
 
                         <div class="topics__content">
