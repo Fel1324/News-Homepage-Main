@@ -28,7 +28,7 @@
 .menu{
     background-color: var(--background-color);
     
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     transform: translateX(200%);
@@ -81,7 +81,7 @@
 }
 
 .web-future__img{
-    width: 100%;
+    width: min(100%, 50rem);
 }
 
 .web-future__title{
@@ -113,6 +113,8 @@
 
 /* MAIN - NEWS */
 .main__news{
+    width: min(100%, 50rem);
+
     background-color: var(--news-background-color);
     
     padding: 2rem;
