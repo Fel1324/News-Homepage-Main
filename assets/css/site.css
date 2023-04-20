@@ -14,7 +14,6 @@
 /* MENU */
 #overlay{
     display: none;
-    display: block;
 
     background-color: var(--overlay-color);
     opacity: .6;
@@ -32,12 +31,19 @@
     position: absolute;
     top: 0;
     right: 0;
+    transform: translateX(200%);
 
     padding-block: 3rem;
 
     width: 65%;
     max-width: 35rem;
     height: 100vh;
+
+    transition: all .3s;
+}
+
+.menu-open{
+    transform: translateX(0);
 }
 
 .menu__header{
@@ -45,6 +51,16 @@
     justify-content: flex-end;
 
     margin-bottom: 7rem;
+}
+
+.menu__body{
+    padding-left: .75rem;
+}
+
+.menu__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
 }
 
 .menu__link{
