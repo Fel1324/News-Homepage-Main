@@ -111,6 +111,12 @@
     
     width: 70%;
     max-width: 26rem;
+
+    transition: background-color .3s;
+}
+
+.web-future__button:hover{
+    background-color: var(--button-hover);
 }
 
 /* MAIN - NEWS */
@@ -129,11 +135,20 @@
 }
 
 .news__title{
+    display: inline-block;
+
     color: var(--news-title-color);
 
     font-size: 2rem;
+    font-weight: 700;
 
     margin-bottom: 1rem;
+
+    transition: color .3s;
+}
+
+.news__title:hover{
+    color: var(--new-link-hover);
 }
 
 .news__paragraphy{
@@ -152,8 +167,7 @@ hr{
 
 /* MAIN - TOPICS */
 .main__topics{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 4rem;
 
     padding-top: 5.4rem;
@@ -175,10 +189,16 @@ hr{
 }
 
 .topics__title{
+    display: inline-block;
+
+    color: var(--topic-titles-color);
+
     font-size: 1.8rem;
     font-weight: 800;
 
     margin-block: 1.4rem;
+
+    transition: color .3s;
 }
 
 /* DESKTOP */
@@ -194,7 +214,6 @@ hr{
         padding-top: 7rem;
         padding-bottom: 5rem;
     }
-
     
     .header__navigation{
         display: block;
@@ -223,6 +242,7 @@ hr{
         grid-template-areas: 
         'img img'
         'c-a c-b';
+        row-gap: 3.6rem;
 
         padding-bottom: 0;
     }
@@ -237,8 +257,6 @@ hr{
     
     .web-future__col-a{
         grid-area: c-a;
-
-        margin-top: 4rem;
     }
 
     .web-future__title{
@@ -249,12 +267,14 @@ hr{
 
     .web-future__col-b{
         grid-area: c-b;
-
-        margin-top: 4rem;
     }
 
     .web-future__paragraphy{
         margin-bottom: 2.8rem;
+    }
+
+    .web-future__button{
+        width: 60%;
     }
 
     /* MAIN - NEW */
@@ -262,12 +282,40 @@ hr{
         grid-area: new;
     }
 
-    /* MAIN - TOPICS */
-    .main__topics{
-        flex-direction: row;
+    .news__main-title{
+        font-size: 4rem;
     }
 
-    .topics__img{
-        width: 100%;
+    /* MAIN - TOPICS */
+    .main__topics{
+        grid-template-columns: 1fr 1fr;
+
+        padding-top: 6.8rem;
+        padding-bottom: 10rem;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    /* MAIN - WEB FUTURE */
+    .main__web-future{
+        column-gap: 5rem;
+    }
+
+    .web-future__title{
+        font-size: 5rem;
+    }
+
+
+    /* MAIN - NEW */
+    .main__news{
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+
+    /* MAIN TOPICS */
+    .main__topics{
+        grid-template-columns: 1fr 1fr 1fr;
+
+        padding-top: 8rem;
     }
 }

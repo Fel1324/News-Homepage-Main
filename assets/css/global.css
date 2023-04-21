@@ -8,22 +8,27 @@
 :root{
     /* COLORS */
     --background-color: hsl(0, 0%, 100%);
+
+    --text-button-color: hsl(36, 100%, 99%);
+    --default-text-color: hsl(236, 13%, 42%);
+
     --background-button-color: hsl(5, 85%, 63%);
     
     --overlay-color: hsl(0, 0%, 0%);
-
     --menu-text-color: hsl(0, 0%, 0%);
 
-    --text-button-color: hsl(36, 100%, 99%);
-    
-    --title-number-color: hsl(233, 8%, 79%);
-    --default-text-color: hsl(236, 13%, 42%);
-    
     --news-text-color: hsl(36, 100%, 99%);
     --news-background-color: hsl(240, 100%, 5%);
     --news-maintitle-color: hsl(35, 77%, 62%);
     --news-title-color: hsl(36, 100%, 99%);
     --line-color: hsl(236, 13%, 42%);
+
+    --title-number-color: hsl(233, 8%, 79%);
+    --topic-titles-color: hsl(0, 0%, 0%);
+
+    --primary-hover: hsl(5, 85%, 63%);
+    --button-hover: hsl(0, 0%, 0%);
+    --new-link-hover: hsl(35, 77%, 62%);
     
     /* TIPOGRAPHY */
     --font: 'Inter', sans-serif;
@@ -79,6 +84,11 @@ ul li a{
     color: var(--menu-text-color);
     
     font-size: 2rem;
+}
+
+.header__navigation ul li a:hover,
+.main__topics article div a:hover{
+    color: var(--primary-hover);
 }
 
 /* CONTAINER - DESKTOP */
