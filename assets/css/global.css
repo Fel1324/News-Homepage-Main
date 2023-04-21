@@ -75,3 +75,17 @@ a{
     text-decoration: none;
 }
 
+ul li a{
+    color: var(--menu-text-color);
+    
+    font-size: 2rem;
+}
+
+/* CONTAINER - DESKTOP */
+@media screen and (min-width: 1024px) {
+    .container{
+        width: min(100%, 125rem);
+    
+        padding-inline: 5rem;
+    }
+}

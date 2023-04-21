@@ -20,6 +20,16 @@
                 <button class="button-open">
                     <img src="assets/images/icon-menu.svg" alt="Abrir menu lateral">
                 </button>
+
+                <nav class="header__navigation">
+                    <ul class="header__lista">
+                        <li class="header__item"><a href="#home" class="header__link">Home</a></li>
+                        <li class="header__item"><a href="#new" class="header__link">New</a></li>
+                        <li class="header__item"><a href="#popular" class="header__link">Popular</a></li>
+                        <li class="header__item"><a href="#trending" class="header__link">Trending</a></li>
+                        <li class="header__item"><a href="#categories" class="header__link">Categories</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
@@ -47,40 +57,45 @@
 
         <main class="main">
             <div class="main__content container">
-                <section id="home" class="main__web-future">
-                    <img class="web-future__img" src="assets/images/image-web-3-mobile.jpg" alt="">
-
-                    <div class="web-future__col-a">
-                        <h1 class="web-future__title">The Bright Future of Web 3.0?</h1>
-                    </div>
-                    
-                    <div class="web-future__col-b">
-                        <p class="web-future__paragraphy">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-                        <button class="web-future__button">Read More</button>
-                    </div>
-                </section>
-
-                <article id="new" class="main__news">
-                    <h2 class="news__main-title">New</h2>
-                    <div class="news__content">
-                        <h3 class="news__title">Hydrogen VS Electric Cars</h3>
-                        <p class="news__paragraphy">Will hydrogen-fueled cars ever catch up to EVs?</p>
-                    </div>
-
-                    <hr>
-
-                    <div class="news__content">
-                        <h3 class="news__title">The Downsides of AI Artistry</h3>
-                        <p class="news__paragraphy">What are the possible adverse effects of on-demand AI image generation?</p>
-                    </div>
-
-                    <hr>
-
-                    <div class="news__content">
-                        <h3 class="news__title">Is VC Funding Drying Up?</h3>
-                        <p class="news__paragraphy">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-                    </div>
-                </article>
+                <div class="main__content-grid">
+                    <section id="home" class="main__web-future">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="assets/images/image-web-3-desktop.jpg">
+                            <img class="web-future__img" src="assets/images/image-web-3-mobile.jpg" alt="">
+                        </picture>
+    
+                        <div class="web-future__col-a">
+                            <h1 class="web-future__title">The Bright Future of Web 3.0?</h1>
+                        </div>
+                        
+                        <div class="web-future__col-b">
+                            <p class="web-future__paragraphy">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                            <button class="web-future__button">Read More</button>
+                        </div>
+                    </section>
+    
+                    <article id="new" class="main__news">
+                        <h2 class="news__main-title">New</h2>
+                        <div class="news__content">
+                            <h3 class="news__title">Hydrogen VS Electric Cars</h3>
+                            <p class="news__paragraphy">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                        </div>
+    
+                        <hr>
+    
+                        <div class="news__content">
+                            <h3 class="news__title">The Downsides of AI Artistry</h3>
+                            <p class="news__paragraphy">What are the possible adverse effects of on-demand AI image generation?</p>
+                        </div>
+    
+                        <hr>
+    
+                        <div class="news__content">
+                            <h3 class="news__title">Is VC Funding Drying Up?</h3>
+                            <p class="news__paragraphy">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                        </div>
+                    </article>
+                </div>
 
                 <section class="main__topics">
                     <article id="popular" class="topics__article">
