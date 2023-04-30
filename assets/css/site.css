@@ -79,6 +79,8 @@
 /* MAIN - WEB FUTURE */
 .main__web-future{
     padding-bottom: 5.4rem;
+
+    animation: fromTop .7s .2s backwards;
 }
 
 .web-future__img{
@@ -126,6 +128,8 @@
     background-color: var(--news-background-color);
     
     padding: 2rem;
+
+    animation: fromTop .7s .4s backwards;
 }
 
 .news__main-title{
@@ -177,6 +181,20 @@ hr{
 .topics__article{
     display: flex;
     gap: 2.4rem;
+
+    animation: fromLeft .7s backwards;
+}
+
+main .topics__article:nth-child(1){
+    animation-delay: .4s;
+}
+
+main .topics__article:nth-child(2){
+    animation-delay: .8s;
+}
+
+main .topics__article:nth-child(3){
+    animation-delay: 1.2s;
 }
 
 .topics__img{
@@ -317,5 +335,30 @@ hr{
         grid-template-columns: 1fr 1fr 1fr;
 
         padding-top: 8rem;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes fromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
