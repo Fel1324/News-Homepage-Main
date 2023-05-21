@@ -14,7 +14,7 @@
 - [Descrição do projeto](#desc)
 - [Tecnologias utilizadas](#tec)
 - [Status do projeto](#status)
-- [Desenvolvedores do projeto](#devs)
+- [Desenvolvedor do projeto](#devs)
 - [Licença](#license)
 
 <br>
